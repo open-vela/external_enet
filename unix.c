@@ -50,7 +50,7 @@
 #endif
 
 #ifdef HAS_POLL
-#include <sys/poll.h>
+#include <poll.h>
 #endif
 
 #ifndef HAS_SOCKLEN_T
