@@ -1,0 +1,14 @@
+#
+# For a description of the syntax of this configuration file,
+# see kconfig-language at https://www.kernel.org/doc/Documentation/kbuild/kconfig-language.txt
+#
+
+config LIB_ENET
+	bool "ENet reliable UDP networking library"
+	default n
+	---help---
+		Enable support for ENet reliable UDP networking library
+
+if LIB_ENET
+
+endif
