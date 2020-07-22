@@ -32,7 +32,7 @@
 #
 ############################################################################
 
--include $(TOPDIR)/Make.defs
+-include $(APPDIR)/Make.defs
 
 CFLAGS += -D__NuttX__
 CSRCS = $(wildcard *.c)
