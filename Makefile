@@ -16,7 +16,9 @@
 
 include $(APPDIR)/Make.defs
 
-CFLAGS += -D__NuttX__
 CSRCS = $(wildcard *.c)
+
+CFLAGS += -D__NuttX__
+CFLAGS += ${shell $(INCDIR) $(INCDIROPT) "$(CC)" include}
 
 include $(APPDIR)/Application.mk

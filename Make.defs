@@ -16,6 +16,4 @@
 
 ifneq ($(CONFIG_LIB_ENET),)
 CONFIGURED_APPS += $(APPDIR)/external/enet
-CFLAGS += ${shell $(INCDIR) $(INCDIROPT) "$(CC)" $(APPDIR)/external/enet/include}
-CXXFLAGS += ${shell $(INCDIR) $(INCDIROPT) "$(CC)" $(APPDIR)/external/enet/include}
 endif
