@@ -18,7 +18,7 @@
 #define ENET_BUILDING_LIB 1
 #include "enet/enet.h"
 
-#ifdef __APPLE__
+#if defined(__APPLE__) || defined(__NuttX__)
 #ifdef HAS_POLL
 #undef HAS_POLL
 #endif
@@ -53,7 +53,7 @@
 #include <poll.h>
 #endif
 
-#if !defined(HAS_SOCKLEN_T) && !defined(__socklen_t_defined)
+#ifndef HAS_SOCKLEN_T
 typedef int socklen_t;
 #endif
 
